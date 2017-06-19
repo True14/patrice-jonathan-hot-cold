@@ -4,7 +4,7 @@ import './game-title.css';
 export default function Title(props) {
 
   return (
-    <h1 class='title'>
+    <h1 className='title'>
       {props.text}
     </h1>
   );
