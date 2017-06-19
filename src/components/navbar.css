@@ -3,10 +3,18 @@ h1 {
 }
 
 .navigation-bar {
-  position: relative;
-    padding: 10px;
+  padding: 1em;
+  vertical-align: baseline;
 }
 
+.navigation-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 .navigation-bar h1, .navigation-bar nav, .navigation-bar-nav li {
     /*vertical-align: middle;*/
 }
@@ -24,5 +32,5 @@ h1 {
 
 .navigation-bar-nav a {
   text-decoration: none;
-  /*color: #fff;*/
+  color: #fff;
 }
