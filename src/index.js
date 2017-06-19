@@ -4,7 +4,8 @@ import NavBar from './components/navbar';
 import Title from './components/title';
 import GameTitle from './components/game-title';
 import Aboutpg from './components/about';
-import GameForm from './components/game-form'
+import GameForm from './components/game-form';
+import GameHistory from './components/game-history';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 const links = [{
@@ -15,6 +16,14 @@ const links = [{
   href: '#'
 }];
 
+const history = [{
+  text: '0'
+}, {
+  text: '34'
+},{
+  text: '65'
+}
+]
 const steps = [
   {
     text: 'Stuff'
@@ -25,8 +34,10 @@ const steps = [
   {
     text: 'Stuff3'
   }];
+
   const intro = "This is a Hot or Cold Number Guessing Game. The game goes like this:";
   const outro = "So, Are you ready?";
+
 ReactDOM.render(<div>
                  <NavBar links={links} />
                  <Aboutpg title="What do I do" steps={steps} intro={intro} outro={outro} />
@@ -34,6 +45,7 @@ ReactDOM.render(<div>
                  <section className="game">
                   <GameTitle text="Make your Guess" />
                   <GameForm placeholder="Enter your Guess" text="Guess" guess="0" />
+                  <GameHistory links={history} />
                  </section>
                 </div>, document.getElementById('root'));
 registerServiceWorker();
