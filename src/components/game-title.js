@@ -4,8 +4,8 @@ import './game-title.css';
 export default function Title(props) {
 
   return (
-    <h1 className='title'>
+    <h2 className='title'>
       {props.text}
-    </h1>
+    </h2>
   );
 }
